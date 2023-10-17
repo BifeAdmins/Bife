@@ -1,6 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
+  font-size: 18px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
@@ -58,7 +61,7 @@ body {
 .footer {
   background-color: #333;
   color: #fff;
-  text-align: right;
+  text-align: center;
   padding: 10px;
 }
 
@@ -90,21 +93,18 @@ body {
   text-shadow: 3px 3px 10px #ff6600, -3px -3px 10px #ff6600;
 }
 
-
-.container {
+.grid-container-main {
   display: flex;
-  margin: 5px;
+  justify-content: space-between;
 }
 
-.divMainLeft {
-  flex: 0 0 5%;
+.item {
+  margin: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
 }
-
-.divMainRight {
-  flex: 0 0 93%;
-  background-color: #e74c3c;
-}
-
 
 .leftSideitemButtonsDiv {
   display: flex;
@@ -129,27 +129,54 @@ body {
   font-weight: bold;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #3498db;
+  padding: 20px;
+  text-align: center;
+}
+
 .content-container {
   text-align: center;
 }
 
-.containerRightDiv {
+.image-text-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.item {
-  flex: 1;
-  max-width: calc(25% - 10px); /* 25% ширины с отступами между элементами */
-  margin: 5px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.fromTheRightFromPicture {
+  margin-left: 10px;
 }
 
 p {
-  text-align: center;
+  margin-top: 10px; 
 }
+
+
+.image-text-container {
+  display: flex;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  justify-content: flex-start; /* Выравнивание по левому краю */
+  max-width: 300px; /* Максимальная ширина контейнера */
+}
+
+img {
+  max-width: 100px; /* Ширина изображения */
+}
+
+.text-container {
+  flex-grow: 1; /* Занимает все доступное пространство справа от изображения */
+  margin-left: 10px; /* Отступ слева от изображения */
+  max-width: calc(100% - 110px); /* Фиксированная ширина минус отступ и ширина изображения */
+}
+
+.text-container p {
+  margin: 0; /* Убирает внешние отступы параграфов */
+}
+
