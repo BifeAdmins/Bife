@@ -40,6 +40,12 @@ main {
   color: aquamarine;
 }
 
+.linkFooter {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0 1.5em;
+}
+
 .link {
   text-decoration: none;
   color: rgb(0, 10, 156);
@@ -50,6 +56,13 @@ main {
   text-align: center;
   font-size: 2rem;
   margin: 0.75em 0;
+}
+
+.titlesPagesMain {
+  text-align: left;
+  font-size: 2rem;
+  margin: 0.75em 0;
+  color: aquamarine;
 }
 
 .text {
@@ -197,4 +210,18 @@ p {
   padding: 20px;
   background-color: #ed5565;
   color: white;
+}
+
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/Images/stalkerBanner.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.imageCenter {
+  position: relative;
+  padding: 1% 1%;
 }
