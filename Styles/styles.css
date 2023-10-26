@@ -221,28 +221,9 @@ p {
   background-position: center;
 }
 
-.imageCenter {
-  position: relative;
-  padding: 1% 1%;
-}
 
 /* about us */
 
-.itemImage {
-  position: relative;
-  width: 100%;
-  padding-bottom: 60%;
-  overflow: hidden;
-}
-
-.itemImage img {
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
 
 .containerRightDiv {
   display: flex;
@@ -273,21 +254,4 @@ p {
   font-size: 1.4rem;
   padding: 20px;
   color: #333;
-}
-
-.leftSideButton {
-  border: none;
-  color: #fff;
-  background: #4554b6;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.6rem;
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.leftSideButton:hover {
-  background: #3a46a3;
 }
