@@ -274,20 +274,3 @@ p {
   padding: 20px;
   color: #333;
 }
-
-.leftSideButton {
-  border: none;
-  color: #fff;
-  background: #4554b6;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.6rem;
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.leftSideButton:hover {
-  background: #3a46a3;
-}
