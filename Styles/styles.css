@@ -17,6 +17,7 @@ main {
   text-transform: uppercase;
   justify-content: space-between;
   padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo img {
@@ -183,14 +184,14 @@ p {
   color: white;
 }
 
-
+/* 
 .banner {
   max-width: 100%;
   height: auto;
   background-image: url("/Images/stalkerBanner.webp");
   background-size: cover;
   background-position: center;
-}
+} */
 
 
 /* about us */
@@ -267,7 +268,7 @@ p {
   text-decoration: none;
   color: #232D3F;
   display: block;
-  
+  font-size: 14px;
 }
 
 .popup a:hover {
