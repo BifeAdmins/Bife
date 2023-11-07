@@ -21,7 +21,7 @@ main {
 
 .logo img {
   max-height: 100px;
-  margin: 10px;
+  margin-left: 80px;
 }
 
 .search img {
@@ -157,6 +157,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
+  
 }
 
 .theNewsInput {
@@ -178,7 +179,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
-  background-color: #ed5565;
+  background-color: #008170;
   color: white;
 }
 
@@ -225,7 +226,6 @@ p {
   padding: 20px;
 }
 
-/* #region Header menu */
 /* Стилізація випадаючих меню */
 .link-container {
   position: relative;
@@ -267,12 +267,12 @@ p {
   text-decoration: none;
   color: #232D3F;
   display: block;
+  
 }
 
 .popup a:hover {
-  background-color: #232D3F;
+  background-color: #008170;
   color: white;
   text-decoration: none;
 
 }
-/* #endregion Header menu */
