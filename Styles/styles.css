@@ -11,9 +11,10 @@ main {
 }
 
 .header {
-  background-color: #4554b6;
+  background-color: #232D3F;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   justify-content: space-between;
   padding: 10px 20px;
 }
@@ -37,7 +38,8 @@ main {
 }
 
 .link:hover {
-  color: aquamarine;
+  /* color: rgb(255, 255, 0); */
+  text-decoration: underline;
 }
 
 .linkFooter {
@@ -48,7 +50,8 @@ main {
 
 .link {
   text-decoration: none;
-  color: rgb(0, 10, 156);
+  color: white;
+;
   padding: 0 1.5em;
 }
 
@@ -80,33 +83,6 @@ main {
   color: #fff;
   text-align: right;
   padding: 10px;
-}
-
-.main-title {
-  font-size: 2.5rem;
-  color: #ec9ecf;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  animation: neonGlow 5s ease-in-out infinite;
-}
-
-@keyframes neonGlow {
-  0% {
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  50% {
-    text-shadow: 3px 3px 10px #ff6600, -3px -3px 10px #ff6600;
-  }
-
-  100% {
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.unique-title:hover {
-  animation: none;
-  text-shadow: 3px 3px 10px #ff6600, -3px -3px 10px #ff6600;
 }
 
 .divMainLeft {
@@ -183,12 +159,6 @@ p {
   left: 0;
 }
 
-.theNewsSectionMain {
-  width: 100%;
-  align-items: center;
-  height: 100%;
-}
-
 .theNewsInput {
   display: grid;
   grid-template-columns: 1fr 10fr;
@@ -214,8 +184,8 @@ p {
 
 
 .banner {
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  height: auto;
   background-image: url("/Images/stalkerBanner.webp");
   background-size: cover;
   background-position: center;
@@ -253,5 +223,56 @@ p {
   text-align: justify;
   font-size: 1.4rem;
   padding: 20px;
-  color: #333;
 }
+
+/* #region Header menu */
+/* Стилізація випадаючих меню */
+.link-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Стилізація лінків */
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Стилізація вікон */
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #1ae44933;
+  z-index: 1;
+}
+
+.link:hover {
+  color: #ed5565;
+}
+
+/* Показ вікна при наведенні миші на контейнер */
+.link-container:hover .popup {
+  display: block;
+  text-decoration: none;
+
+}
+
+/* Стилізація посилань у вікні */
+.popup a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #232D3F;
+  display: block;
+}
+
+.popup a:hover {
+  background-color: #232D3F;
+  color: white;
+  text-decoration: none;
+
+}
+/* #endregion Header menu */
