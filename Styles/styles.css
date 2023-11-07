@@ -19,11 +19,12 @@ main {
   text-transform: uppercase;
   justify-content: space-between;
   padding: 10px 20px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo img {
   max-height: 100px;
-  margin: 10px;
+  margin-left: 80px;
 }
 
 .search img {
@@ -218,7 +219,6 @@ p {
   padding: 20px;
 }
 
-/* #region Header menu */
 /* Стилізація випадаючих меню */
 .link-container {
   position: relative;
@@ -238,13 +238,14 @@ p {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px #1ae44933;
   z-index: 1;
 }
 
 .link:hover {
-  color: #ed5565;
+  text-decoration: none;
+
 }
 
 /* Показ вікна при наведенні миші на контейнер */
@@ -263,9 +264,8 @@ p {
 }
 
 .popup a:hover {
-  background-color: #232D3F;
-  color: white;
-  text-decoration: none;
+  border: 3px solid #232D3F;
+  /* display: flex; */
+  align-items: center;
 
 }
-/* #endregion Header menu */
