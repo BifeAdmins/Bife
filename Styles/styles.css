@@ -23,8 +23,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo img {
-  max-height: 100px;
-  margin-left: 80px;
+  max-width: 20vw;
+  margin-left: 60PX;
+  height: auto;
 }
 
 .search img {
@@ -182,7 +183,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
-  background-color: #ed5565;
+  background-color: #008170;
   color: white;
 }
 
