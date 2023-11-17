@@ -131,14 +131,6 @@ font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.item {
-  flex: 1;
-  max-width: calc(25% - 10px);
-  margin: 1%;
-  background: #e3e3e3;
-  box-shadow: 4px 8px 5px 0 rgba(0, 0, 0, .5);
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -168,21 +160,21 @@ p {
   grid-template-columns: 1fr 10fr;
   grid-gap: 20px;
   align-items: center;
-  font-size: 20px;
+  font-size: 1vw;
   background: #e3e3e3;
   box-shadow: 4px 8px 5px 0 rgba(0, 0, 0, .5);
 }
 
 .newsRowText {
-  padding: 20px 20px;
+  padding: 1rem;
   color: rgb(1, 31, 7);
 }
 
 .leftNewsDiv {
   text-align: center;
   text-transform: uppercase;
-  padding: 20px;
-  background-color: #ed5565;
+  padding: 1rem;
+  background-color: #005B41;
   color: white;
 }
 
@@ -201,7 +193,7 @@ p {
   max-width: calc(25% - 10px);
   margin: 10px;
   box-shadow: 4px 8px 5px 0 rgba(0, 0, 0, 0.5);
-  background: #fff;
+  background: #e3e3e3;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -231,6 +223,8 @@ p {
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
+  font-size: 1.5vw;
+  
 }
 
 /* Стилізація вікон */
@@ -241,6 +235,7 @@ p {
   min-width: 180px;
   box-shadow: 0px 8px 16px 0px #1ae44933;
   z-index: 1;
+  font-size: 1vw;
 }
 
 .link:hover {
@@ -256,16 +251,20 @@ p {
 }
 
 /* Стилізація посилань у вікні */
+
+
+
 .popup a {
   padding: 10px 20px;
   text-decoration: none;
-  color: #232D3F;
+  color: #e3e3e3;
   display: block;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  background: #232D3F;
 }
 
-.popup a:hover {
-  border: 3px solid #232D3F;
-  /* display: flex; */
-  align-items: center;
-
+.popup a:hover{
+  color: #008170;
 }
+
