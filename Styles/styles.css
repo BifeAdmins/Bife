@@ -251,8 +251,7 @@ p {
 /* Показ вікна при наведенні миші на контейнер */
 .link-container:hover .popup {
   display: block;
-  text-decoration: none;
-
+  text-decoration: none;  
 }
 
 /* Стилізація посилань у вікні */
@@ -261,11 +260,13 @@ p {
   text-decoration: none;
   color: #232D3F;
   display: block;
+  font-size: 14px;
 }
 
 .popup a:hover {
-  border: 3px solid #232D3F;
+  border: 2px solid #008170;
   /* display: flex; */
   align-items: center;
-
+  font-size: 14px;
+  font-weight: bold;
 }
